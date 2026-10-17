@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css?v=23">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=info,mail" />
+    <link rel="icon" type="image/jpeg" href="https://i.postimg.cc/L5pF93jx/Gemini-Generated-Image-21v3zh21v3zh21v3.jpg">
+    <title data-i18n="brandTitle">WH - Wir Helfen!</title>
+</head>
+<body>
+    <div class="rand">
+        <nav class="home-actions" aria-label="Kontaktmöglichkeiten">
+            <a class="action-button" href="./info.html" aria-label="Kontaktinformationen" data-i18n-aria-label="infoPage" title="Info">
+                <span class="material-symbols-outlined" aria-hidden="true">info</span>
+                <span data-i18n="infoLabel">Info</span>
+            </a>
+            <a class="action-button" href="./email.html" aria-label="Zur E-Mail-Seite" data-i18n-aria-label="emailPage" title="E-Mail">
+                <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+                <span data-i18n="emailNavLabel">E-Mail</span>
+            </a>
+        </nav>
+        <button class="menu-button" type="button" aria-label="Menü öffnen" data-i18n-aria-label="openMenu" aria-expanded="false" aria-controls="seitenmenue">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M3 6h18M3 12h18M3 18h18" />
+            </svg>
+        </button>
+        <h1 class="edu-qld-hand" data-i18n="brandTitle">WH - Wir Helfen!</h1>
+        <section class="home-info" aria-labelledby="home-info-heading">
+            <h2 id="home-info-heading" data-i18n="homeInfoHeading">Wir sind für dich da</h2>
+            <p data-i18n="homeInfoText">Wir hören dir zu, wenn du eine schwierige Zeit durchmachst, und suchen gemeinsam mit dir nach passenden Lösungen. Unsere Unterstützung ist komplett kostenlos.</p>
+        </section>
+        <aside class="menu-panel" id="seitenmenue" aria-hidden="true" inert>
+            <button class="menu-close" type="button" aria-label="Menü schließen" data-i18n-aria-label="closeMenu">×</button>
+            <h2 data-i18n="menuTitle">Menü</h2>
+            <section class="language-picker" aria-labelledby="language-title">
+                <h3 id="language-title" data-i18n="languageTitle">Sprache</h3>
+                <div class="language-options" role="group" aria-label="Sprache wählen" data-i18n-aria-label="languageTitle">
+                    <button type="button" data-language="de" aria-pressed="true">Deutsch</button>
+                    <button type="button" data-language="en" aria-pressed="false">English</button>
+                    <button type="button" data-language="hu" aria-pressed="false">Magyar</button>
+                </div>
+            </section>
+        </aside>
+    </div>
+    <script src="language.js" defer></script>
+    <script src="script.js" defer></script>
+</body>
+</html>

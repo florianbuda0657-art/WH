@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpeg" href="https://i.postimg.cc/L5pF93jx/Gemini-Generated-Image-21v3zh21v3zh21v3.jpg">
+    <link rel="stylesheet" href="style.css?v=13">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chat,home,mail">
+    <title data-i18n="contactTitle">Kontakt | WH - Wir Helfen!</title>
+</head>
+<body class="email-page">
+    <main class="rand email-card">
+      <nav class="home-actions" aria-label="Kontaktmöglichkeiten">
+        <a class="action-button home-nav-link" href="./index.html" aria-label="Zur Startseite" data-i18n-aria-label="homePage" title="Startseite">
+            <span class="material-symbols-outlined" aria-hidden="true">home</span>
+        </a>
+      </nav>
+      <button class="menu-button" type="button" aria-label="Menü öffnen" data-i18n-aria-label="openMenu" aria-expanded="false" aria-controls="seitenmenue">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M3 6h18M3 12h18M3 18h18" />
+          </svg>
+      </button>
+      <aside class="menu-panel" id="seitenmenue" aria-hidden="true" inert>
+          <button class="menu-close" type="button" aria-label="Menü schließen" data-i18n-aria-label="closeMenu">×</button>
+          <h2 data-i18n="menuTitle">Menü</h2>
+          <section class="language-picker" aria-labelledby="language-title">
+              <h3 id="language-title" data-i18n="languageTitle">Sprache</h3>
+              <div class="language-options" role="group" aria-label="Sprache wählen" data-i18n-aria-label="languageTitle">
+                  <button type="button" data-language="de" aria-pressed="true">Deutsch</button>
+                  <button type="button" data-language="en" aria-pressed="false">English</button>
+                  <button type="button" data-language="hu" aria-pressed="false">Magyar</button>
+              </div>
+          </section>
+      </aside>
+      <div class="email-content">
+        <h1 class="email-title" data-i18n="contactHeading">Schreib uns</h1>
+        <p class="email-intro" data-i18n="contactIntro">Füll das Formular aus, wir melden uns bei dir.</p>
+
+        <form class="contact-form" action="https://formspree.io/f/xkjokeov" method="POST">
+            <input type="hidden" name="Kategorie" id="request-type-value" value="">
+            <input type="hidden" name="subject" id="email-subject" value="">
+
+            <p class="honeypot" aria-hidden="true">
+                <label>Nicht ausfüllen: <input name="_gotcha" tabindex="-1" autocomplete="off"></label>
+            </p>
+
+            <label class="field-label" for="contact-name" data-i18n="nameLabel">Name</label>
+            <input class="contact-input" id="contact-name" name="name" type="text" autocomplete="name" required>
+
+            <label class="field-label" for="contact-email" data-i18n="emailLabel">E-Mail-Adresse</label>
+            <input class="contact-input" id="contact-email" name="email" type="email" autocomplete="email" required>
+
+            <fieldset class="request-options">
+                <legend data-i18n="topicLegend">Worum geht es?</legend>
+                <label><input type="radio" name="Auswahl" value="member" required> <span data-i18n="memberOption">Ich will Mitglied sein im WH-Team</span></label>
+                <label><input type="radio" name="Auswahl" value="help"> <span data-i18n="helpOption">Ich brauche Hilfe</span></label>
+            </fieldset>
+
+            <label class="field-label" for="contact-message" data-i18n="messageLabel">Dein Anliegen</label>
+            <textarea class="contact-input contact-message" id="contact-message" name="Nachricht" rows="4" required></textarea>
+
+            <button class="contact-submit" type="submit" data-i18n="submitButton">Absenden</button>
+        </form>
+
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </div>
+    </main>
+    <script src="language.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="email.js" defer></script>
+</body>
+</html>

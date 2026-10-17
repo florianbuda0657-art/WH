@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=home">
+    <title data-i18n="infoTitle">Kontaktinformationen | WH - Wir Helfen!</title>
+</head>
+<body>
+    <main class="rand info-page">
+        <nav class="home-actions" aria-label="Navigation">
+            <a class="action-button home-nav-link" href="./index.html" aria-label="Zur Startseite" data-i18n-aria-label="homePage" title="Startseite">
+                <span class="material-symbols-outlined" aria-hidden="true">home</span>
+            </a>
+        </nav>
+        <button class="menu-button" type="button" aria-label="Menü öffnen" data-i18n-aria-label="openMenu" aria-expanded="false" aria-controls="seitenmenue">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M3 6h18M3 12h18M3 18h18" />
+            </svg>
+        </button>
+        <aside class="menu-panel" id="seitenmenue" aria-hidden="true" inert>
+            <button class="menu-close" type="button" aria-label="Menü schließen" data-i18n-aria-label="closeMenu">×</button>
+            <h2 data-i18n="menuTitle">Menü</h2>
+            <section class="language-picker" aria-labelledby="language-title">
+                <h3 id="language-title" data-i18n="languageTitle">Sprache</h3>
+                <div class="language-options" role="group" aria-label="Sprache wählen" data-i18n-aria-label="languageTitle">
+                    <button type="button" data-language="de" aria-pressed="true">Deutsch</button>
+                    <button type="button" data-language="en" aria-pressed="false">English</button>
+                    <button type="button" data-language="hu" aria-pressed="false">Magyar</button>
+                </div>
+            </section>
+        </aside>
+        <section class="info-content" aria-labelledby="info-heading">
+            <h1 class="email-title" id="info-heading" data-i18n="infoHeading">Kontakt per E-Mail</h1>
+            <p data-i18n="infoText">Wenn du uns per E-Mail kontaktierst, teilen wir dir anschließend unseren Telegram-Kontakt mit, damit wir uns einfacher austauschen können.</p>
+            <a class="info-email-link" href="./email.html" data-i18n="infoEmailLink">E-Mail schreiben</a>
+        </section>
+    </main>
+    <script src="language.js?v=26" defer></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
